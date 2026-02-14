@@ -1,125 +1,71 @@
-# 🤖 AI Chatbot - Streamlit Application
+# 🤖 AI Chatbot
 
+A simple and elegant chatbot application powered by Google Gemini AI, built with Streamlit.
 
 ## ✨ Features
 
-- 💬 **Real-time Conversations**: Interactive chat interface with Google Gemini AI
-- 📝 **Chat History**: Persistent storage of conversation history
-- 💾 **Export Functionality**: Export chats to JSON or TXT format
-- 🎨 **Modern UI**: Clean and responsive user interface
-- 📊 **Chat Statistics**: Track message counts and conversation metrics
-- 🔒 **Secure**: API key management with environment variables
+- 💬 Real-time AI conversations
+- 📝 Auto-save chat history
+- 💾 Export chats (JSON/TXT)
+- 📊 Message statistics
+- 🎨 Clean, modern interface
+
+OUTPUTS:
+
+
+![image_alt](https://github.com/VasudhaShivane/ai-chatbot-streamlittt/blob/2684189cb29a8886f6440daa4f8b45d97d592003/screenshots/Screenshot%202026-02-14%20144400.png)
+
+![image_alt](https://github.com/VasudhaShivane/ai-chatbot-streamlittt/blob/9da33b77791f72fd0f3a976d6e1c4e306a302a31/screenshots/Screenshot%202026-02-14%20144504.png)
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### 1. Install Dependencies
 
-- Python 3.8 or higher
-- Google Gemini API key ([Get one here](https://makersuite.google.com/app/apikey))
+```bash
+pip install -r requirements.txt
+```
 
-### Installation
+### 2. Set Up API Key
 
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd chatbot_streamlit_project
+1. Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Create a `.env` file:
+   ```
+   GEMINI_API_KEY=your_api_key_here
    ```
 
-2. **Create a virtual environment**
-   ```bash
-   # Windows
-   python -m venv venv
-   venv\Scripts\activate
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Set up environment variables**
-   ```bash
-   # Copy the example env file
-   cp .env.example .env
-   
-   # Edit .env and add your API key
-   # GEMINI_API_KEY=your_actual_api_key_here
-   ```
-
-### Running the Application
+### 3. Run the App
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in your default browser at `http://localhost:8501`
+Open your browser at `http://localhost:8501`
+
+## 📋 Requirements
+
+- Python 3.8+
+- Streamlit
+- Google Generative AI
+- Python-dotenv
+
+## 🛠️ Configuration
+
+Edit `config.py` to customize:
+- AI model (default: `models/gemini-2.5-flash`)
+- Chat history length
+- UI theme
+- Auto-save settings
 
 ## 📁 Project Structure
 
-```
 chatbot_streamlit_project/
-├── app.py                  # Main Streamlit application
-├── config.py              # Configuration settings
-├── utils.py               # Utility functions
-├── requirements.txt       # Python dependencies
-├── .env.example          # Example environment variables
-├── .gitignore            # Git ignore rules
-├── README.md             # This file
-└── data/                 # Data directory (created automatically)
-    └── chat_history/     # Saved chat histories
-```
-
-## 🔧 Configuration
-
-Edit `config.py` to customize:
-
-- **Model Settings**: Change AI model, temperature, etc.
-- **UI Theme**: Modify colors and styling
-- **Chat Settings**: Adjust history length, auto-save behavior
-- **Safety Settings**: Configure content filtering
-
-## 📖 Usage Guide
-
-### Managing Chats
-
-- **Clear Chat**: Click "Clear Chat History" in the sidebar
-- **Save Chat**: Manually save with "Save Chat" button
-- **Auto-save**: Enabled by default after each message
-
-### Exporting Conversations
-
-1. Click "JSON" or "TXT" in the Export section
-2. Click the download button that appears
-3. Save the file to your desired location
-
-## 🔐 API Key Setup
-
-### Environment Variable 
-
-1. Copy `.env.example` to `.env`
-2. Add your API key: `GEMINI_API_KEY=your_key_here`
-
-
-### Getting an API Key
-
-1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Sign in with your Google account
-3. Create a new API key
-4. Copy and save it securely
-
-## 📊 Features in Detail
-
-### Chat Statistics
-
-- Total message count
-- User vs AI message breakdown
-- Word count analytics
-- Conversation metrics
-
-### Export Formats
-
-**JSON Export**
-**TXT Export**
+├── app.py              # Main application
+├── config.py           # Configuration settings
+├── utils.py            # Helper functions
+├── requirements.txt    # Dependencies
+├── .env               # API key (create this)
+└── data/              # Chat history storage
 
 
 
-**Made with ❤️ using Streamlit and Google Gemini AI**
+
