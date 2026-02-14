@@ -10,6 +10,11 @@ A simple and elegant chatbot application powered by Google Gemini AI, built with
 - 📊 Message statistics
 - 🎨 Clean, modern interface
 
+OUTPUTS:
+
+
+![image_alt](https://github.com/VasudhaShivane/ai-chatbot-streamlittt/blob/2684189cb29a8886f6440daa4f8b45d97d592003/screenshots/Screenshot%202026-02-14%20144400.png)
+
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
