@@ -15,6 +15,8 @@ OUTPUTS:
 
 ![image_alt](https://github.com/VasudhaShivane/ai-chatbot-streamlittt/blob/2684189cb29a8886f6440daa4f8b45d97d592003/screenshots/Screenshot%202026-02-14%20144400.png)
 
+![image_alt](https://github.com/VasudhaShivane/ai-chatbot-streamlittt/blob/9da33b77791f72fd0f3a976d6e1c4e306a302a31/screenshots/Screenshot%202026-02-14%20144504.png)
+
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
