@@ -1,0 +1,64 @@
+# 🤖 AI Chatbot
+
+A simple and elegant chatbot application powered by Google Gemini AI, built with Streamlit.
+
+## ✨ Features
+
+- 💬 Real-time AI conversations
+- 📝 Auto-save chat history
+- 💾 Export chats (JSON/TXT)
+- 📊 Message statistics
+- 🎨 Clean, modern interface
+
+## 🚀 Quick Start
+
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Set Up API Key
+
+1. Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Create a `.env` file:
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+### 3. Run the App
+
+```bash
+streamlit run app.py
+```
+
+Open your browser at `http://localhost:8501`
+
+## 📋 Requirements
+
+- Python 3.8+
+- Streamlit
+- Google Generative AI
+- Python-dotenv
+
+## 🛠️ Configuration
+
+Edit `config.py` to customize:
+- AI model (default: `models/gemini-2.5-flash`)
+- Chat history length
+- UI theme
+- Auto-save settings
+
+## 📁 Project Structure
+
+chatbot_streamlit_project/
+├── app.py              # Main application
+├── config.py           # Configuration settings
+├── utils.py            # Helper functions
+├── requirements.txt    # Dependencies
+├── .env               # API key (create this)
+└── data/              # Chat history storage
+
+
+
+
